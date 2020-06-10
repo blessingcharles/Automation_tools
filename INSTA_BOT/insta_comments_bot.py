@@ -106,7 +106,7 @@ class insta_bot():
 try:
     option = webdriver.FirefoxOptions()
     option.add_argument("--headless")
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(options=option)
     driver.get("https://www.instagram.com/?hl=en")
     bot = insta_bot()
     bot.start_bot()
